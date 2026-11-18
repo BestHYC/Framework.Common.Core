@@ -78,9 +78,5 @@ namespace Framework.Common.Core
 
             sb.Append(Convert.ToString(value, CultureInfo.InvariantCulture));
         }
-        public static T2 Test<T1, T2>(this T1 v1)
-        {
-            return default(T2);
-        }
     }
 }

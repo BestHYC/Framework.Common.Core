@@ -181,4 +181,13 @@ namespace ConsoleApp.Test.ExtensionTest
         Unknown = 0,
         Active = 1
     }
+    class Parent
+    {
+        public virtual void Foo() => Console.WriteLine("Parent.Foo");
+    }
+
+    class Son : Parent
+    {
+        public override void Foo() => Console.WriteLine("Son.Foo");
+    }
 }
